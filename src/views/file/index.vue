@@ -3,13 +3,14 @@
     <el-aside >
       <file-tree></file-tree>
     </el-aside>
-    <el-header>
-      <upload></upload>
-    </el-header>
-    <el-main>
-      <shows></shows>
-      <upload></upload>
-    </el-main>
+    <el-container>
+      <el-header >
+        <upload></upload>
+      </el-header>
+      <el-main >
+        <shows></shows>
+      </el-main>
+    </el-container>
   </el-container>
 </template>
 

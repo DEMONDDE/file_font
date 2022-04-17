@@ -2,7 +2,7 @@
   <file></file>
 </template>
 <script>
-import File from "@/views/file";
+import File from "./views/file";
 
 export default {
   name: 'App',

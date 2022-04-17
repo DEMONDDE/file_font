@@ -5,8 +5,8 @@
         <span class="custom-tree-node">
           <span>{{ node.label }}</span>
           <span>
-            <el-icon @click.stop="append(data)"><plus /></el-icon>
-            <el-icon @click.stop="remove(node, data)"><close /></el-icon>
+            <i @click.stop="append(data)" class="el-icon-plus"></i>
+            <i @click.stop="remove(node, data)" class="el-icon-minus"></i>
           </span>
         </span>
       </template>
@@ -15,13 +15,8 @@
 </template>
 
 <script>
-import {Plus, Close} from '@element-plus/icons-vue'
 export default {
   name: "fileTree",
-  components:{
-    Plus,
-    Close
-  },
   data(){
     return{
       trees: []
@@ -46,12 +41,14 @@ export default {
     append(data){
       if(!data.children){
         data.children = [];
-      };
+      }
       data.children.push({
         label : 'test',
       })
     },
     remove(node, data){
+      console.log(node);
+      console.log(data)
     }
   }
 }

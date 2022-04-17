@@ -10,7 +10,8 @@ const mutations = {
 
 const actions = {
     updateDate({commit}, fileType){
-
+        console.log(commit);
+        console.log(fileType)
     }
 }
 
